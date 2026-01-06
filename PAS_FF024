@@ -3,478 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>家庭靈命塑造詳細指南 - 24單元全集</title>
+    <title>24個與主相遇的時刻 - 深度互動手冊</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
-        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f3f4f6; }
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
-        .step-title { @apply font-bold text-indigo-700 mt-4 mb-2 flex items-center gap-2; }
-        .tip-box { @apply bg-amber-50 border-l-4 border-amber-400 p-3 my-2 text-sm italic text-amber-900 rounded-r; }
-        .unit-card { @apply bg-white rounded-xl shadow-md overflow-hidden mb-4 border border-gray-100; }
-        .scripture-tag { @apply inline-block bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded text-xs font-bold mb-2; }
-        .banner-scripture { @apply bg-indigo-900 text-white p-6 rounded-2xl mb-8 shadow-lg text-center; }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
+        body { 
+            font-family: 'Noto Sans TC', sans-serif; 
+            background-color: #f8fafc; 
+            color: #334155; 
+            line-height: 1.8; 
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        }
+        .unit-card.active .accordion-content {
+            max-height: 10000px;
+            padding-bottom: 2.5rem;
+        }
+        .unit-card.active .chevron {
+            transform: rotate(180deg);
+        }
+        .phase-card { @apply bg-white p-6 rounded-2xl border border-slate-100 mb-6 shadow-sm; }
+        .phase-title { @apply flex items-center gap-3 mb-4 font-black text-lg; }
+        .step-tag { @apply px-2 py-1 rounded text-xs font-bold uppercase tracking-wider; }
+        
+        .tip-box { @apply bg-amber-50 border-l-4 border-amber-400 p-4 mt-4 text-sm text-amber-900 italic rounded-r-lg; }
+        .dialogue-text { @apply pl-4 border-l-2 border-indigo-200 text-indigo-700 font-medium my-2; }
+        .action-highlight { @apply text-rose-600 font-bold; }
+        
+        .bg-phase-1 { @apply bg-amber-100 text-amber-700; }
+        .bg-phase-2 { @apply bg-sky-100 text-sky-700; }
+        .bg-phase-3 { @apply bg-emerald-100 text-emerald-700; }
+        .bg-phase-4 { @apply bg-indigo-100 text-indigo-700; }
     </style>
 </head>
-<body class="p-4 md:p-8">
+<body class="py-12 px-4 md:px-8">
     <div class="max-w-4xl mx-auto">
-        <!-- 置頂經文提醒 -->
-        <div class="banner-scripture">
-            <h2 class="text-xl md:text-2xl font-bold mb-2">「至於我和我家，我們必定事奉耶和華。」</h2>
-            <p class="text-indigo-200">— 約書亞記 24:15 —</p>
-        </div>
-
-        <header class="text-center mb-10">
-            <h1 class="text-3xl md:text-4xl font-bold text-indigo-900 mb-2">🏠 家庭崇拜：24場生命相遇全集</h1>
-            <p class="text-gray-600">專為 5-8 歲兒童家庭設計，從靈性根基到生活實踐</p>
+        
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-6">🏠 深度家庭祭壇</h1>
+            <p class="text-slate-500 text-xl font-medium">24 個與主相遇的時刻：互動式全導引</p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <span class="flex items-center gap-1 text-sm font-bold text-amber-600">● 暖身感知</span>
+                <span class="flex items-center gap-1 text-sm font-bold text-sky-600">● 話語亮光</span>
+                <span class="flex items-center gap-1 text-sm font-bold text-emerald-600">● 回應實驗</span>
+                <span class="flex items-center gap-1 text-sm font-bold text-indigo-600">● 祈禱交匯</span>
+            </div>
         </header>
 
-        <div class="space-y-4">
-            
-            <!-- Unit 01 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">01. 🌊 暴風雨中的平安 (平安/焦慮)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">馬可福音 4:35-41</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>心情天氣預報：</strong>讓孩子用「天氣」形容今天的心情（如：大太陽、下小雨）。問：「當心裡颳起大風時，你會害怕嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>講述門徒在船上遇見風暴，耶穌卻在睡覺。耶穌醒來對風浪說：「住了吧！靜了吧！」風就平息了。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>對著水盆用力撥弄製造波浪，然後學耶穌說「住了吧」。<strong>轉化：</strong>當我們害怕時，可以呼求耶穌的名字。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>點燃蠟燭，全家輪流祝福：「願耶穌的平安與（名字）同在。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 02 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">02. 🪞 我是天父的小寶貝 (自我價值)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">詩篇 139:13-16</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>鏡子尋寶。在蓋住的籃子放一面鏡子，告訴孩子裡面有「世界上最特別的寶貝」。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>神說祂在媽媽肚子裡就「編織」了你，你是祂精心設計的。你是獨一無二的。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>指紋畫創作。觀察指紋，發現全家人都不一樣。<strong>轉化：</strong>在畫旁寫下「我是神奇妙的創造」。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>父母按手在孩子肩頭：「謝謝天父把這麼珍貴的（名字）賜給我們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 03 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">03. 🤝 饒恕的魔法布 (饒恕/人際)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">馬太福音 18:21-22</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>兩人三腳。試著一起走，如果不合拍會跌倒。問：「當我們吵架不原諒對方，心是不是很卡？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>不寬容僕人的故事。我們都犯過錯，天父原諒我們無數次，所以我們也要練習原諒別人「七十個七次」。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>魔法抹布。用白板筆在盤子寫下不開心的事，用濕布輕輕抹去。<strong>轉化：</strong>饒恕就像把心裡的髒污擦乾淨。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>全家圍成圈擁抱：「對不起、請原諒我、謝謝你、我愛你。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 04 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">04. 🍱 分享的小籃子 (慷慨/分享)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">約翰福音 6:1-13</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>分享餅乾。給孩子五片餅乾，請他分配給全家人。問：「把好吃的東西分出去，你心裡感覺如何？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>五餅二魚的小男孩。他的午餐雖然很少，但在耶穌手裡變成了五千人的大餐。微小的分享有巨大力量。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>準備一個分享盒。裝入小卡片或糖果。<strong>轉化：</strong>明天送給警衛阿伯或辛苦的老師。練習「給予」的喜樂。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主賜我大方的手，讓我像那個小男孩一樣被祢使用。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 05 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">05. 🌿 聆聽神的小耳朵 (靜默/引導)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">列王紀上 19:11-13</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>蒙眼聽音。家人在房間不同角落發出微聲（如：撕紙、硬幣掉落），請孩子指出方位。必須很安靜才聽得到。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>先知以利亞在山洞裡。神不在狂風或地震中，祂在微小的聲音裡。神常在心靈安靜時對我們說話。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>全家安靜一分鐘。深呼吸，專注感受神的同在。<strong>轉化：</strong>分享這一分鐘你心裡想到了什麼好的事情？</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>儀式：</strong>輕聲在孩子耳邊唸出祝福經文。祈禱：「願你的耳朵天天聽見天父的愛。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 06 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">06. ⚡ 聖靈的超能力 (連結/力量)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">使徒行傳 1:8</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>隱形的力量。用磁鐵隔著紙吸引迴紋針。問：「你看得到力量嗎？但它卻讓東西動起來了。」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>耶穌回天家後，差遣聖靈來到我們心裡。聖靈像看不見的發電機，給我們勇氣去愛人、說好話。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>手拉手「傳電」。一人捏一下手，把「愛心電力」傳給下一位。<strong>轉化：</strong>當我們覺得累或不想愛人時，求聖靈充電。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求聖靈像火一樣，點燃我們家的熱情與愛。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 07 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">07. 🕯️ 誠實的小燈籠 (誠實/勇氣)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">路加福音 19:1-10</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>捉迷藏。孩子躲起來。問：「躲在暗處害怕被發現的感覺是怎樣的？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>矮個子撒該。他以前愛騙錢，遇見耶穌後他變誠實了。耶穌讓他從樹上下來，不再需要躲藏。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>手電筒光照。黑暗中用光照亮雜亂。<strong>轉化：</strong>說謊像躲在影子裡，誠實像在光中走路，心情會很輕鬆。</p>
-                    <div class="tip-box">輔導小撇步：若孩子最近說了謊，先稱讚他承認的勇氣，再給予引導。</div>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「天父，謝謝祢愛誠實的孩子，請給我說實話的勇氣。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 08 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">08. 🌱 忍耐的小種子 (忍耐/等待)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">雅各書 5:7-8</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>不准動挑戰。全家維持一個奇怪姿勢，看誰忍耐最久。問：「等待的過程是不是覺得心癢癢的？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>農夫等秋雨。種子入土需要時間，神在過程中幫我們預備最美的。忍耐是結出好果子的必要過程。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>種植綠豆。在濕棉花放綠豆。<strong>轉化：</strong>這週練習一件事：不急著要零食或玩具，學習「慢慢等」。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主給我安靜的心，像小種子一樣，安靜地等候祢的時間。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 09 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">09. 🛡️ 勇氣小護衛 (信心/勇氣)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">撒母耳記上 17:41-50</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>信任跌。孩子背對父母往後倒。問：「因為相信背後有人，你才敢倒下去嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>大衛打敗巨人。他沒有厚盔甲，但他有神給的勇氣。他知道神與他同在，所以不怕巨人。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>手作：</strong>勇氣盾牌。用紙板剪一個圓盤寫上「神與我同在」。<strong>轉化：</strong>當面對害怕的事情時，舉起盾牌為自己禱告。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「主耶穌，祢是我的盾牌，我有祢就不怕。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 10 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">10. 🦶 洗腳的秘密 (謙卑/服事)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">約翰福音 13:1-15</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>「我是國王」。讓孩子坐在沙發最高處被大家服務。問：「當國王比較棒，還是服務別人比較棒？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>耶穌幫門徒洗腳。耶穌是最大的神，卻願意彎腰做最髒的工作。祂教我們要彼此服事。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>儀式：</strong>全家互擦鞋子。<strong>轉化：</strong>這週主動幫忙做一件家事（如收碗盤），不求讚美，默默去做。</p>
-                    <div class="tip-box">輔導小撇步：父母此時也要服事孩子，展現謙卑的榜樣。</div>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主給我勤勞的手和溫柔的心，學習像祢一樣服務人。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 11 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">11. 🏺 感恩收集賽 (數算恩典)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">路加福音 17:11-19</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>讚美接龍。全家輪流說一件今天覺得幸福的小事（如：吃到好吃的午餐）。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>十個大痲瘋病人。只有一個回來大聲感謝耶穌。耶穌問：「那九個在哪裡呢？」</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>手作：</strong>恩典罐。把感恩的事寫在小紙條放進玻璃瓶。<strong>轉化：</strong>每週崇拜時讀出幾張，發現神好愛我們。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「天父，謝謝祢給我們的生活。我們要做那個跑回來感謝祢的小羊。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 12 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">12. 🎁 最棒的聖誕禮物 (慶祝/核心)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">路加福音 2:1-20</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>拆驚喜盒。在漂亮的盒子裡放一個聖嬰像或十字架。問：「你收過最有意義的禮物是什麼？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>耶穌降生。聖誕節不是為了拿禮物，而是慶祝耶穌這份最大的禮物來到我們中間，陪伴我們。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>畫一張聖誕卡片送給「被遺忘的人」（如：辛苦的清潔員）。<strong>轉化：</strong>把耶穌的愛分享出去。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「謝謝耶穌來到我們家，祢是我們最愛的禮物。生日快樂！阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 13 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">13. 🐉 憤怒的火龍 (情緒調節)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">以弗所書 4:26-27</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>噴火龍比賽。做出生氣最醜的面孔。問：「生氣時心跳是不是很快？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>不可含怒到日落。不熄滅的火會燒傷家人。耶穌希望我們把生氣交給祂，心裡就有水可以滅火。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>氣球緩緩放氣（象徵冷靜）。<strong>練習：</strong>這週生氣時先說：「我現在很生氣」，然後深呼吸三下。</p>
-                    <div class="tip-box">輔導小撇步：父母也要分享自己生氣時如何靠主冷靜。</div>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「主耶穌，請幫我管住心裡的火龍，給我溫柔的靈。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 14 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">14. ⏳ 數算我的時間 (時間管理)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">詩篇 90:12</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>一分鐘計時。看一分鐘內能收多少玩具或跳多少下。體會時間是會流動的。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>摩西的祈禱。時間是神的恩典。求主教我們有智慧地用時間，不要讓它浪費在沒意義的事上。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>大石頭優先放入罐子（代表讀經、睡眠、功課），沙子才裝得下（代表玩耍）。<strong>轉化：</strong>把最重要的事情先做好。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「天父，謝謝祢給我新的一天。求祢讓我成為時間的小管家。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 15 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">15. 🏨 鄰居是誰？ (愛鄰舍)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">路加福音 10:25-37</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>誰敲門？聽家人腳步聲或模仿鄰居說話。問：「我們家附近有誰需要我們關心？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>好撒馬利亞人。鄰居不只是住旁邊的人，更是願意向有需要的人伸手的人。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>繪製社區愛心地圖。<strong>轉化：</strong>寫一張鼓勵卡片塞進管理室或鄰居家信箱，代表耶穌愛他。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主擴大我們的心，去愛那些我們不認識但有需要的人。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 16 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">16. 📱 網路小管家 (數位自律)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">哥林多前書 6:12</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>木頭人挑戰。五分鐘完全不看螢幕。問：「沒螢幕時，你心裡平靜嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>凡事都可行，但不都有益。網路很豐富，但不要被它「勾住」了。我們要做機器的主人，不是僕人。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>儀式：</strong>用餐「手機監獄」（盒子）。<strong>轉化：</strong>全家這週末安排一場「真實森林散步」，放下手機。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主給我自制力，讓我在網路的世界也能發光，不迷失方向。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 17 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">17. 🍯 說好話的嘴唇 (言語恩慈)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">箴言 16:24</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>甜言蜜語。大家輪流說出一句稱讚家人的真心話。問：「你的心是不是感覺甜甜的？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>良言如蜂房。嘴巴說出的話有生命，可以醫治人。神喜歡我們的嘴唇流出愛和蜂蜜。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>實驗：</strong>擠牙膏（收不回的話）。<strong>轉化：</strong>開口前先想「這句話是蜂蜜還是箭？」。這週練習「不說負面抱怨的話」。</p>
-                    <div class="tip-box">輔導小撇步：孩子若說錯話，引導他觀察對方的傷心，再進行道歉。</div>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主保守我的嘴唇，只說祝福與鼓勵人的好話。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 18 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">18. 🪙 錢幣的智慧 (忠心理財)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">馬太福音 25:21</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>想要 vs 需要。拿出餅乾圖（需要）與昂貴玩具圖（想要）。討論：「神給我們的錢要先用在哪？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>才幹的寓言。主耶穌給我們不同的資源，看重的是我們是否「忠心」。管理好小錢的人，神會交託大事。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>三個撲滿：奉獻、存錢、花費。<strong>轉化：</strong>每次拿到零用錢，先分出一份給天父（奉獻），感謝祂。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「謝謝天父供應我們家。求祢教我運用金錢來榮耀祢。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 19 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">19. 🌍 照顧地球家園 (管家職分)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">創世記 1:28</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>觸摸大自然。在公園撿樹葉或石頭。問：「如果神創造的世界壞掉了，祂會不會難過？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>亞當管理伊甸園。我們不是地球的主人，是神派來的管理員。愛神也要愛神所創造的大自然。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>家庭環保大作戰。分類垃圾。<strong>轉化：</strong>練習這週「隨手關燈、珍惜水源」，這也是愛耶穌的表現。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「主啊，謝謝祢創造美麗的世界。請教導我做一個負責任的地球管理員。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 20 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">20. 🐑 耶穌是好牧人 (信靠之樂)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">詩篇 23:1-4</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>小羊過障礙。蒙住孩子眼睛，父母用聲音引導他走路。問：「聽見我的聲音，你就不怕跌倒了嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>耶穌是好牧人，祂叫得出每隻羊的名字。即使路很黑，祂的杖、祂的竿都保護我們安全。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>畫一張平安畫（有牧羊人和小羊）。<strong>轉化：</strong>在睡前跟耶穌說：「謝謝祢今晚看顧我這隻小羊。」</p>
-                    <div class="tip-box">輔導小撇步：這對容易怕黑或晚上哭鬧的孩子非常有幫助。</div>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「耶穌，謝謝祢牽著我的手，有祢在我就很安心。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 21 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">21. 🧭 聖經地圖探索 (話語引路)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">詩篇 119:105</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>蒙眼找寶藏 vs 點燈找寶藏。體會「光」對於指路的重要性。聖經就是那道光。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>祢的話是我腳前的燈。人生有時會不知道怎麼選，聖經就像指南針，會告訴我們走哪條路才快樂。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>聖經尋寶（找金句卡）。<strong>轉化：</strong>建立這週的讀經約會，每天五分鐘讀一小段聖經故事。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「求主給我渴慕祢話語的心，讓聖經成為我一生的導航。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 22 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">22. 👣 傳福音的小腳蹤 (福音使命)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">馬太福音 28:19-20</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>傳悄悄話遊戲。傳一句「耶穌愛你」。問：「如果好消息不說出來，你的朋友會知道嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>大使命。耶穌回天家前，請我們每個人都去做祂的「小信差」，把祂愛世人的好消息傳遍各地。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>朋友祈禱樹（寫下還沒信主的朋友）。<strong>轉化：</strong>這週為一位朋友禱告，或邀請他來家裡玩。用愛傳福音。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「主耶穌，請給我勇氣把祢的愛分享給我的朋友。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 23 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">23. 🩹 失敗了沒關係 (恩典修補)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">約翰福音 21:15-17</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>疊疊樂。倒下的時候大家一起喊：「沒關係，再來一次！」感受「失敗不是終點」。</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>彼得的恢復。彼得曾說謊不認主，他很傷心。但耶穌復活後去找他，重新接納他。耶穌的愛比我們的過錯還大。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>撕不破的愛（父母用膠帶修補孩子寫錯的紙）。<strong>轉化：</strong>在家裡練習：做錯事不逃避，而是尋求饒恕和擁抱。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「謝謝耶穌，即使我不小心做錯，祢還是緊緊抱著我。阿們。」</p>
-                </div>
-            </details>
-
-            <!-- Unit 24 -->
-            <details class="unit-card group">
-                <summary class="p-5 cursor-pointer flex justify-between items-center group-open:bg-indigo-600 group-open:text-white transition-all">
-                    <span class="text-lg font-bold">24. 🌈 永遠的應許 (永恆盼望)</span>
-                </summary>
-                <div class="p-6 space-y-3 bg-white text-gray-800">
-                    <span class="scripture-tag">啟示錄 21:1-4</span>
-                    <div class="step-title">一、暖身：感知當下</div>
-                    <p><strong>活動：</strong>想像未來的家。畫出你覺得最幸福的樣子。問：「在那裡我們會一直跟耶穌在一起嗎？」</p>
-                    <div class="step-title">二、話語：生命亮光</div>
-                    <p><strong>故事：</strong>新天新地。那裡沒有眼淚，只有耶穌的溫暖。這 24 個單元只是一個開始，我們要一直牽手走到見主面。</p>
-                    <div class="step-title">三、回應：生活實驗</div>
-                    <p><strong>活動：</strong>畢業合照。<strong>儀式：</strong>頒發「小小精兵證書」。父母給予最後的深切祝福，肯定孩子的成長。</p>
-                    <div class="step-title">四、祈禱：靈裡交匯</div>
-                    <p><strong>祈禱：</strong>「哈利路亞！謝謝祢引領我們家。願祢的愛在我們家直到永永遠遠。阿們。」</p>
-                </div>
-            </details>
-
+        <div id="units-container" class="space-y-6">
+            <!-- JS 內容生成區 -->
         </div>
 
-        <footer class="mt-12 text-center text-gray-400 text-sm border-t pt-8">
-            <p>「教養孩童，使他走當行的道，就是到老他也不偏離。」— 箴言 22:6</p>
-            <p class="mt-2">這 24 個詳細單元，願成為您家中最美的祝福。</p>
+        <footer class="mt-24 text-center text-slate-400 pb-20 border-t pt-10">
+            <p class="font-bold">「至於我和我家，我們必定事奉耶和華。」</p>
+            <p class="text-sm mt-4 italic text-slate-300">點擊上方單元開啟家庭神聖時刻</p>
         </footer>
     </div>
+
+    <script>
+        const unitsData = [
+            {
+                id: 1, title: "暴風雨中的平安", theme: "克服恐懼與信心", scripture: "馬可福音 4:35-41", color: "bg-blue-600",
+                p1: { title: "我的心像哪種天氣？", time: "5 min", desc: "家人圍坐深呼吸三次。邀請人用「天氣」形容心情（太陽、烏雲、雷雨、微風）。", action: "小朋友用動作表現（雙手轉圈是太陽，拍大腿是下雨）。", tip: "若孩子說「不知道」，父母示範：「爸爸今天有點像『陰天』，灰灰的但沒下雨。你呢？」這能提供具體詞彙。" },
+                p2: { title: "耶穌在船上睡覺", time: "10 min", desc: "想像我們都在小船上（搖晃身體）。突然大風來了（吹氣、拍地板造浪聲）！門徒很害怕尖叫！", action: "但耶穌在睡覺。祂不擔心，因為祂知道誰在看顧祂。耶穌站起來說：『住了吧！靜了吧！』浪就停了。", dialogue: "「如果你在船上，你會想跟耶穌說什麼？」" },
+                p3: { title: "水盆裡的平安實驗", time: "15 min", desc: "紙船放水盆。孩子撥水造「浪」。告訴孩子生活也有浪（如考試、被排擠）。", action: "大家對水盆說：「住了吧！靜了吧！」停止撥動。放入「信心小石頭」。水靜了就能看清石頭，代表神的愛。", tip: "創意手作：每人在石頭上畫一個愛心，代表「神與我同在」。" },
+                p4: { title: "光中的祝福", time: "5 min", desc: "點燃蠟燭（象徵耶穌的光）。家人輪流握手祝福。", dialogue: "「[名字]，當你心裡有風浪時，願耶穌的平安與你同在。」", tip: "讓5歲孩子負責「吹熄蠟燭」作為結束信號，增加參與感與責任感。" }
+            },
+            {
+                id: 2, title: "我是神眼中的寶貝", theme: "自我價值", scripture: "詩篇 139:13-14", color: "bg-indigo-600",
+                p1: { title: "神祕拼圖屋", time: "5 min", desc: "給每人一片完全不同的拼圖。嘗試用單片拼圖拼出一張畫。發現單獨一片看不出什麼，但合起來很美。", action: "每個人都是上帝計畫中，那塊最獨一無二的拼圖。", tip: "若孩子這週受挫，強調：『這片拼圖雖然有一點點受傷，但在上帝眼中畫就不完整。』" },
+                p2: { title: "奇妙的受造", time: "10 min", desc: "拿鏡子觀察眼睛、指紋。敘述：上帝像編織家，在媽媽肚子裡一點一點織成你。", action: "唸出經文：『我要稱謝你，因我受造，奇妙可畏。』對鏡子裡的自己微笑。", dialogue: "「上帝創造你的時候，最細心設計的是哪一部分？（如：愛笑的眼睛、跑很快的腿）」" },
+                p3: { title: "優點生命樹", time: "15 min", desc: "牆上貼樹幹紙。每人在便利貼寫下「對方的一個優點」並讀出來，貼在樹上。", action: "如：孩子對媽媽說：『我喜歡媽媽做的飯，讓我覺得被愛。』", tip: "父母示範具體的讚美，不要只說『你很乖』，要說『我看到你主動收玩具，很體貼。』" },
+                p4: { title: "按手傳承祝福", time: "5 min", desc: "父母按手在孩子頭上。這是一種神聖的身分確認儀式。", dialogue: "「主耶穌，謝謝祢創造[名字]。他在祢眼中比珍珠還寶貴，求祢提醒他，他是王族孩子。」", tip: "儀式結束後，全家做一個專屬的「加油擊掌」，強化歸屬感。" }
+            },
+            {
+                id: 3, title: "分享的小手不孤單", theme: "慷慨與給予", scripture: "路加福音 6:38", color: "bg-pink-600",
+                p1: { title: "糖果倍增器", time: "5 min", desc: "給孩子兩顆糖。請他分享一顆給爸爸。當他分享後，爸爸從袋子拿出更多回贈給他。", action: "討論：剛才把糖分出去的時候心裡會捨不得嗎？看到變更多時是什麼感覺？", tip: "這是為了視覺化『給予的，就必有給你們的』這個真理。" },
+                p2: { title: "五餅二魚的奇蹟", time: "10 min", desc: "拿出五塊餅兩條魚。敘述：小男孩拿出的便當很小，但在耶穌手裡餵飽了五千人。", action: "全家模擬分餅動作，感受上帝無限的供應。", dialogue: "「如果你是那個小男孩，你會捨不得把午餐交給耶穌嗎？為什麼？」" },
+                p3: { title: "驚喜祝福包", time: "15 min", desc: "準備小袋子放零食或祝福卡。討論這週要送給誰？（如警衛、老師）。", action: "孩子親手封口畫愛心，練習送出去時要說的話。", tip: "實際行動比理論更有力，體會『給予』比『領受』更快樂。" },
+                p4: { title: "手牽手連環祝福", time: "5 min", desc: "全家站成一圈握手。想像神的愛像電流傳遞。", dialogue: "「主耶穌，讓我們的家成為流通管子，讓祢的愛透過我們分給其他人。」", tip: "播放輕快詩歌，全家一起踏步，感受充滿活力的喜樂。" }
+            },
+            {
+                id: 4, title: "勇敢的小戰士", theme: "克服恐懼", scripture: "約書亞記 1:9", color: "bg-amber-600",
+                p1: { title: "黑暗中的光影", time: "5 min", desc: "關掉燈。在黑暗中用手電筒照出影子。問：在黑暗中會感到孤單嗎？", action: "打開手電筒照著心臟：有光在裡面，就不怕黑了。", tip: "父母可以分享自己小時候怕黑的經驗，降低孩子因恐懼產生的羞恥感。" },
+                p2: { title: "大衛與大巨人", time: "10 min", desc: "爸爸扮巨人歌利亞大聲咆哮，孩子扮大衛拿紙球。敘述：大衛不怕，因為他靠萬軍之耶和華的名。", action: "孩子大喊：『我靠主耶穌的名！』投擲紙球。巨人倒地。", dialogue: "「你心裡有什麼『巨人』讓你害怕嗎？耶穌怎麼幫你？」" },
+                p3: { title: "勇氣披風製作", time: "15 min", desc: "用毛巾或大布做披風。在布上貼上寫有「勇氣、主同在、剛強」的貼紙。", action: "穿上披風在客廳巡邏，宣告：『主與我同在，我不害怕！』", tip: "這週如果孩子面對恐懼（如獨自睡覺），可以讓他穿上這件披風。" },
+                p4: { title: "全家的勇氣圓圈", time: "5 min", desc: "大家手臂搭在肩膀，頭碰頭。", dialogue: "「主耶穌，祢是我們的盾牌。這週當我們害怕時，請祢握住我們的手。阿們。」", tip: "用力的抱一抱孩子，身體的接觸能最快給予安全感。" }
+            },
+            {
+                id: 5, title: "聆聽神的小耳朵", theme: "安靜與親近神", scripture: "列王紀上 19:11-13", color: "bg-teal-600",
+                p1: { title: "靜音模式啟動", time: "5 min", desc: "全家安靜1分鐘不說話。之後分享：你聽到了什麼平時沒注意的聲音？", action: "如時鐘滴答聲、呼吸聲、外面的鳥叫。", tip: "引導孩子發現：只有安靜下來，才能聽到微小的聲音。" },
+                p2: { title: "不是風，不是火", time: "10 min", desc: "模仿大風（呼呼叫）、火（霹啪響）、地震（搖晃）。敘述：以利亞在這些裡面都沒聽到神。", action: "直到微小的聲音傳來。父母在孩子耳邊輕聲說：『我愛你』。", dialogue: "「你覺得耶穌喜歡在哪種時候跟你說話？」" },
+                p3: { title: "愛的小紙條", time: "15 min", desc: "全家各自拿一張紙，靜默3分鐘。問耶穌：『主啊，祢想對我說什麼？』", action: "畫下或寫下想到的畫面或話語。彼此分享。", tip: "不要糾結內容是否正確，重點是訓練孩子『期待神說話』的心。" },
+                p4: { title: "觸摸雙耳祝福", time: "5 min", desc: "父母親吻孩子的雙耳，並做祝福禱告。", dialogue: "「願[名字]的耳朵天天對神的話敏銳。主啊，請帶領他的腳步。」", tip: "最後全家一起安靜30秒，享受安息的感覺。" }
+            },
+            {
+                id: 6, title: "說好話的水杯", theme: "言語的力量", scripture: "箴言 16:24", color: "bg-emerald-600",
+                p1: { title: "牙膏實驗室", time: "5 min", desc: "給孩子一條牙膏，請他擠出一大段。然後請他嘗試『把牙膏塞回去』。", action: "觀察發現：擠出來很容易，塞回去卻不可能。就像說出的話收不回。", tip: "讓孩子體會言語一旦傷了人，道歉雖然能止血，但痕跡還在。" },
+                p2: { title: "兩顆種子的話語", time: "10 min", desc: "敘述兩盆花的故事：一盆天天聽讚美，一盆天天聽罵。最後一盆枯萎了。", action: "聖經說：『言語良言如同蜂蜜。』對家人輪流說一句甜甜的話。", dialogue: "「你聽過最讓你心碎的一句話是什麼？你想跟主說什麼？」" },
+                p3: { title: "良言蜂蜜罐", time: "15 min", desc: "準備一個玻璃罐。全家寫下想對彼此說的感謝話放入罐中。", action: "約定：這週如果有人吵架，就要來罐子抽一張良言讀出來。", tip: "鼓勵孩子觀察父母的辛勞並說謝謝，建立家庭正向循環。" },
+                p4: { title: "洗淨唇邊禱告", time: "5 min", desc: "指尖沾一點水，輕點孩子唇邊。", dialogue: "「主耶穌，洗淨我的嘴巴。願我口中的話、心裡的意念，都能讓祢高興。」", tip: "教導孩子這週若想發脾氣，先深呼吸說：『主，幫我勒住舌頭。』" }
+            },
+            {
+                id: 7, title: "聖靈的隱形電力", theme: "聖靈的能力", scripture: "使徒行傳 1:8", color: "bg-cyan-600",
+                p1: { title: "靜電氣球", time: "5 min", desc: "用氣球在頭髮摩擦，讓氣球吸起紙屑。問：你看得到電力嗎？但它有沒有力量？", action: "聖靈就像看不見的風或電，卻能給我們力量去做原本做不到的事。", tip: "如果孩子最近覺得有些事情很困難（如學琴），這是一個很好的切入點。" },
+                p2: { title: "膽小彼得變勇敢", time: "10 min", desc: "敘述彼得在耶穌被抓時很膽小。但五旬節聖靈像火降臨後，他變成了大能的演講者。", action: "模仿火降下的聲音，全家舉手接受『聖靈電力』。", dialogue: "「你現在最需要聖靈給你什麼力量？（如：誠實、忍耐、體貼）」" },
+                p3: { title: "傳電捏捏手", time: "15 min", desc: "全家圍坐。爸爸捏媽媽手一下，傳給孩子。感受愛的流動。", action: "若有人生氣，『電力』就會斷掉。全家練習彼此認罪，接通電力。", tip: "讓孩子知道，認錯是接通聖靈能力的唯一插頭。" },
+                p4: { title: "充電按手禮", time: "5 min", desc: "父母將手放在孩子背後（像插座一樣）。", dialogue: "「聖靈請來，像電力充滿[名字]，讓他這週充滿愛與喜樂。阿們。」", tip: "大喊三聲：『哈利路亞！我有聖靈電力！』結束。" }
+            },
+            {
+                id: 8, title: "誠實的小蜜蜂", theme: "誠實品格", scripture: "箴言 12:22", color: "bg-orange-600",
+                p1: { title: "墨水心實驗", time: "5 min", desc: "一杯清水加一滴黑墨。水立刻變髒。說明小謊言也會弄髒心靈。", action: "再倒入大量清水沖洗，直到變乾淨。說明承認錯誤就是洗淨的過程。", tip: "強調：上帝不討厭做錯事的人，但祂不喜歡說謊掩蓋的人。" },
+                p2: { title: "亞拿尼亞的故事", time: "10 min", desc: "敘述亞拿尼亞夫妻想在大家面前裝得很慷慨。結果他們欺騙了聖靈。", action: "討論：他們為什麼要說謊？（因為怕丟臉）。", dialogue: "「你曾因為怕被罵而說謊嗎？那種感覺是不是像心裡藏了一塊大石頭？」" },
+                p3: { title: "透明心箱子", time: "15 min", desc: "準備一個空箱。全家可以自由（不具名或具名）寫下近期的小隱瞞。", action: "一起在神面前認罪，並當場把紙條撕碎，宣布：『耶穌已經赦免我們了！』", tip: "父母若能示範分享自己工作上的疏忽，能給孩子極大的安全感去說實話。" },
+                p4: { title: "清心之約祝福", time: "5 min", desc: "全家伸出手心朝上，象徵在神面前透明。", dialogue: "「主耶穌，給我們一顆愛真理的心。在我們家，說實話是安全的，因為有愛。」", tip: "給孩子一個堅定的擁抱，告訴他：『無論發生什麼事，說實話我們都愛你。』" }
+            },
+            {
+                id: 9, title: "腳前的燈，路上的光", theme: "神的話語", scripture: "詩篇 119:105", color: "bg-yellow-600",
+                p1: { title: "蒙眼迷宮", time: "5 min", desc: "在家中設障礙。孩子蒙眼，父母只用聲音引導走完全程。", action: "問：沒有聲音指引時，你會怕撞到嗎？", tip: "告訴孩子：聖經就是那個引導我們的聲音，怕我們在世界上跌倒。" },
+                p2: { title: "天父的長信", time: "10 min", desc: "展示聖經。敘述：這是上帝怕我們迷路，特地寫給我們的導航地圖。", action: "翻開其中一頁讓孩子看。讀出一句應許。", dialogue: "「如果你去到一個完全陌生、黑暗的地方，你最想帶什麼在身邊？」" },
+                p3: { title: "經文藏寶圖", time: "15 min", desc: "將一句經文拆成五個部分，藏在客廳各處。孩子拿手電筒去尋找並拼起來。", action: "全家大聲朗讀拼好的經文三遍。", tip: "讓孩子動手找，能增加他對神話語的記憶度與興趣。" },
+                p4: { title: "親吻聖經儀式", time: "5 min", desc: "父母讀一段經文，孩子親吻聖經，代表珍愛。", dialogue: "「主耶穌，謝謝祢送給我們聖經。願祢的話成為我腳前的燈，路上的光。」", tip: "睡前幫孩子把聖經放在枕邊（如果可以），讓孩子感覺神的話在守護他。" }
+            },
+            {
+                id: 10, title: "聰明的金錢管家", theme: "管理與奉獻", scripture: "馬太福音 25:14-30", color: "bg-teal-700",
+                p1: { title: "糖果投資計畫", time: "5 min", desc: "給孩子5顆糖果。問：如果你現在吃掉，就只有5顆。如果你幫爸爸做一件家事，可以變10顆。", action: "討論：你會選擇立刻花掉，還是努力管理讓它變多？", tip: "建立『延遲享受』與『忠心管理』的概念。" },
+                p2: { title: "三個僕人領銀幣", time: "10 min", desc: "敘述主人給五千、二千、一千的故事。主人稱讚的是那忠心管理的人。", action: "對話：『如果你有100塊錢，上帝希望你怎麼分配？』", dialogue: "「上帝給我們的才華（如畫畫）也是錢財的一種，你怎麼用它？」" },
+                p3: { title: "三色存錢筒", time: "15 min", desc: "製作三個罐子：『獻給神』、『存起來』、『買東西』。", action: "讓孩子裝飾這三個罐子。當場放入第一筆奉獻。", tip: "教導什一奉獻的概念，是感恩上帝賜予我們全部的 100%。" },
+                p4: { title: "手心奉獻祈禱", time: "5 min", desc: "全家將手疊在『獻給神』的罐子上。", dialogue: "「主耶穌，謝謝祢賜給我們家一切。我們把這小部分獻給祢，求祢用它去幫助更多需要的人。」", tip: "約定下次去教會時，讓孩子親手把錢放入奉獻箱。" }
+            },
+            {
+                id: 11, title: "合一的建築師", theme: "家庭連結與和睦", scripture: "詩篇 133:1", color: "bg-amber-800",
+                p1: { title: "單手穿衣挑戰", time: "5 min", desc: "請兩個人各出一隻手，合力扣上釦子或折好一件衣服。", action: "分享：一個人做很難，兩個人合作是不是快多了？", tip: "強調：我們家是一個團隊，沒有人應該單打獨鬥。" },
+                p2: { title: "靈宮活石", time: "10 min", desc: "聖經說我們每人都是一塊活石。大家肩膀靠肩膀圍圈站立。只要有一人鬆開，圈子就散了。", action: "敘述：耶穌是那塊最重要的基石，把我們黏在一起。", dialogue: "「當我們吵架時，就像石頭裂開了。什麼東西能把我們黏回去？（愛與原諒）」" },
+                p3: { title: "家庭夢想藍圖", time: "15 min", desc: "在長捲紙上畫下：『我們理想中的家』。包含笑臉、一起做的事。", action: "每人加上一個顏色或圖案。簽名承諾『愛我們的家』。", tip: "將這張畫貼在餐桌旁，提醒大家保持合一。" },
+                p4: { title: "環抱愛之圈", time: "5 min", desc: "全家緊緊擁抱在一起。父母張開雙臂包住所有人。", dialogue: "「主耶穌，謝謝祢把我們放在同一個家。願祢的愛像強力的膠水，讓我們永遠不分開。」", tip: "擁抱時，每個人對旁邊的人說：『有你真好。』" }
+            },
+            {
+                id: 12, title: "找回迷失的小羊", theme: "關懷與宣教", scripture: "路加福音 15:4-7", color: "bg-red-700",
+                p1: { title: "客廳大尋羊", time: "5 min", desc: "藏起一隻玩具羊。故意讓它很難找。大家一起找。", action: "找到時，全家大聲歡呼：『找到了！』體會牧羊人的喜悅。", tip: "告訴孩子：天父看到一個不認識祂的人，就像我們找這隻羊一樣緊張。" },
+                p2: { title: "99 與 1 的距離", time: "10 min", desc: "敘述牧羊人為了那 1 隻，翻山越嶺。在那隻羊受傷害怕時找到它。", action: "父母把孩子抱起來，模擬牧羊人把羊扛在肩上。", dialogue: "「如果你是那隻走丟的羊，你會希望誰來找你？」" },
+                p3: { title: "愛心代禱名單", time: "15 min", desc: "寫下班上或鄰居中，不常笑或比較孤單的人的名字。", action: "討論：這週我們可以怎麼對他好一點？（如送他一顆糖、陪他玩）。", tip: "這就是宣教的開始：讓別人看見耶穌的愛。" },
+                p4: { title: "肩扛祝福儀式", time: "5 min", desc: "父母親吻孩子：『你是神找回來的小羊。』", dialogue: "「主耶穌，謝謝祢找回我們。也求祢給我們愛心，去尋找那些難過的朋友，帶他們回家。」", tip: "帶領孩子做這週的『愛心任務』宣告。" }
+            },
+            {
+                id: 13, title: "緊緊黏住葡萄樹", theme: "與神連結", scripture: "約翰福音 15:5", color: "bg-green-700",
+                p1: { title: "折枝實驗", time: "5 min", desc: "展示一枝已經乾枯的樹枝，和一枝還長在樹上的鮮花。", action: "問：為什麼乾枯的樹枝會斷掉？它還能長出葡萄嗎？", tip: "離了樹，枝子就沒命了。我們離了耶穌，心就會乾乾的。" },
+                p2: { title: "真葡萄樹的故事", time: "10 min", desc: "耶穌說：『我是葡萄樹，你們是枝子。』大人張開雙臂當樹，孩子抱住大人的腰當枝子。", action: "搖晃大人，看枝子會不會掉。耶穌保證：『常在我裡面的，我也常在他裡面。』", dialogue: "「我們要怎麼『黏』在耶穌身上？（讀經、禱告、想念祂）」" },
+                p3: { title: "愛的小章魚計畫", time: "15 min", desc: "畫一棵葡萄樹貼牆。這週有禱告或讀經的孩子，就在樹上貼一顆紫色的紙葡萄。", action: "看看週末時，我們的樹上有多少甜美的果實？", tip: "不要強迫孩子，而是讓孩子覺得這是一個累積寶藏的過程。" },
+                p4: { title: "連結之手祈禱", time: "5 min", desc: "手牽手，感受生命力的傳遞。", dialogue: "「主耶穌，我是祢的小枝子。請把祢的愛與養分傳給我，讓我今天能長出好脾氣的果子。」", tip: "最後全家一起喝一杯葡萄汁，慶祝與主連結。" }
+            },
+            {
+                id: 14, title: "鹽巴與光的任務", theme: "影響力", scripture: "馬太福音 5:13-14", color: "bg-blue-500",
+                p1: { title: "無鹽湯大作戰", time: "5 min", desc: "準備一碗完全沒鹽的湯讓大家喝。再加一點點鹽讓大家喝。", action: "問：鹽巴這麼小，卻能讓整碗湯變好喝。你有什麼感覺？", tip: "鹽巴是隱形的英雄，它讓世界變美味。" },
+                p2: { title: "城在山上", time: "10 min", desc: "關燈。點燃一盞燈放在桌上。敘述：燈要照亮一家的人。", action: "耶穌說：『你們是世上的光。』你的好行為就是那道光。", dialogue: "「你在學校做什麼事，會讓別人覺得『耶穌的光在那裡』？」" },
+                p3: { title: "發光任務卡", time: "15 min", desc: "製作『我是小鹽巴』任務：讚美老師、撿起垃圾、安慰哭的小朋友。", action: "完成的人可以在自己的名牌上貼一顆小太陽。", tip: "鼓勵孩子在平凡的小事上發光。" },
+                p4: { title: "撒鹽祝福儀式", time: "5 min", desc: "手做撒鹽狀。父母為孩子祝福。", dialogue: "「主耶穌，讓[名字]到哪裡都像鹽巴一樣，讓大家變開心；也像光一樣，趕走別人的難過。」", tip: "全家一起對鏡子喊：『我是光，我是鹽，加油！』" }
+            },
+            {
+                id: 15, title: "磐石上的堅固房", theme: "順服根基", scripture: "馬太福音 7:24", color: "bg-stone-600",
+                p1: { title: "沙地積木挑戰", time: "5 min", desc: "在軟枕頭（沙土）上疊高積木。在硬地板（磐石）上疊高積木。", action: "問：哪一個房子的底座最穩？哪一個搖一下就塌了？", tip: "順服主的話，就是把生命蓋在最硬的磐石上。" },
+                p2: { title: "聰明人與愚拙人", time: "10 min", desc: "敘述大雨降下、洪水沖來的聲音。沙土房『啪』的一聲全毀了，磐石房依然在那。", action: "耶穌說：『凡聽見我的話就去行的，就是聰明人。』", dialogue: "「這週上帝說要『愛仇敵』，你去做了，這就是蓋在哪裡？」" },
+                p3: { title: "磐石承諾石", time: "15 min", desc: "去外面撿一顆平滑的大石頭。全家分工在上面寫下『耶穌是我家的磐石』。", action: "裝飾這顆石頭放在玄關，提醒每個人出門進門都要聽主的話。", tip: "石頭沉甸甸的感覺能給孩子穩定的心理暗示。" },
+                p4: { title: "堅固踏步禮", time: "5 min", desc: "全家重重踏步在地上，手牽手。", dialogue: "「主耶穌，這世界會有風雨。願我們全家聽祢的話，生命蓋在祢這磐石上，永不動搖。」", tip: "最後大聲宣告：『我的根基在耶穌！』" }
+            },
+            {
+                id: 16, title: "重生的毛毛蟲", theme: "生命改變", scripture: "哥林多後書 5:17", color: "bg-lime-600",
+                p1: { title: "舊衣換新裝", time: "5 min", desc: "找出一件孩子已經穿不下、髒掉的舊衣服。再拿出一件乾淨的新衣服。", action: "討論：穿舊的舒服還是新的舒服？舊的我們通常怎麼處理？", tip: "耶穌要把我們裡面那個『愛生氣、愛自私』的舊人換掉。" },
+                p2: { title: "繭裡的奇蹟", time: "10 min", desc: "用大被子把孩子包起來像個繭。敘述：毛毛蟲在裡面安靜地等待。", action: "耶穌進來後，孩子破繭而出，變成美麗蝴蝶（揮動手臂）。", dialogue: "「如果你是一隻新蝴蝶，你想飛去哪裡讚美神？」" },
+                p3: { title: "缺點碎紙機", time: "15 min", desc: "寫下這週想改掉的一個舊習慣（如拖延）。", action: "全家一起用力把這張紙撕碎丟進垃圾桶。宣告：『舊事已過，都變成新的了！』", tip: "這是一個象徵性的心理釋放過程。" },
+                p4: { title: "新人宣告祝福", time: "5 min", desc: "父母親吻孩子的額頭：『你在基督裡是新造的人。』", dialogue: "「主耶穌，謝謝祢給我新的心。今天起，我有新的勇氣和愛心去面對世界。」", tip: "給孩子噴一點點淡香水（或乳液），象徵新生命的香氣。" }
+            },
+            {
+                id: 17, title: "瓦器裡的寶貝", theme: "接納軟弱", scripture: "哥林多後書 4:7", color: "bg-amber-900",
+                p1: { title: "破罐藏金", time: "5 min", desc: "準備一個舊舊的、甚至有裂痕的罐子，裡面裝滿閃亮的硬幣或珠寶。", action: "問：你看外表很醜，但裡面裝什麼？哪一個比較重要？", tip: "我們就像這瓦器，雖然會受傷、會哭，但耶穌住在我們裡面就是最棒的寶物。" },
+                p2: { title: "保羅身上的刺", time: "10 min", desc: "敘述保羅雖然很有能力，但身上有一根『刺』讓他很痛。神對他說：『我的恩典夠你用。』", action: "討論：你有什麼不喜歡自己的地方？耶穌說祂在那裡顯出更大的能力。", dialogue: "「當你覺得自己很差時，你想聽耶穌對你說什麼？」" },
+                p3: { title: "金縫修補藝術", time: "15 min", desc: "在畫出的破裂罐子上，用金色的筆去描繪那些裂痕。", action: "寫上：『主的恩典在這裡。』讓缺陷變成美麗的裝飾。", tip: "教導孩子接納自己的不完美，因為那裡是神恩典流進來的地方。" },
+                p4: { title: "軟弱中的擁抱", time: "5 min", desc: "家人互相擁抱，說：『我愛原本的你。』", dialogue: "「主耶穌，謝謝祢住在我們這破舊的瓦器裡。願祢的能力在我們的軟弱上顯得完全。」", tip: "儀式結束後，拍拍孩子的背，給予肯定的眼神。" }
+            },
+            {
+                id: 18, title: "天國的小王子/小公主", theme: "身分認同", scripture: "彼得前書 2:9", color: "bg-purple-600",
+                p1: { title: "皇冠加冕禮", time: "5 min", desc: "用金色紙板做一個簡單的皇冠讓孩子戴上。請他走一圈。", action: "問：戴上皇冠後，你會想隨便在地上亂滾嗎？你的動作會變優雅嗎？", tip: "你的身分決定了你的行為。你是萬王之王的兒女。" },
+                p2: { title: "雙重國籍的故事", time: "10 min", desc: "敘述我們雖然住在地球，但戶口名簿在天上。我們是天國派來的特使。", action: "討論：天國的法律只有一條，就是『愛』。你今天遵守法律了嗎？", dialogue: "「如果天父是國王，祂會希望祂的小王子怎麼對待同學？」" },
+                p3: { title: "天國身分證製作", time: "15 min", desc: "製作一張卡片，正面寫名字，背面寫：『身分：天父的愛子/愛女』。", action: "讓孩子畫上自己的自畫像。護貝起來帶在書包裡。", tip: "當孩子在學校被否定時，這張卡片能提醒他的真實身分。" },
+                p4: { title: "跪地受封儀式", time: "5 min", desc: "孩子跪地，父母拿一本聖經輕點他肩膀（像封騎士一樣）。", dialogue: "「我宣告[名字]是神揀選的君尊祭司。願你這週帶著天國的榮耀，傳播平安與愛。」", tip: "父母對孩子鞠躬微笑，給予高度的尊榮感。" }
+            },
+            {
+                id: 19, title: "像運動員一樣堅持", theme: "毅力與恆心", scripture: "希伯來書 12:1", color: "bg-orange-700",
+                p1: { title: "單腳平衡挑戰", time: "5 min", desc: "全家試著單腳站立。第一次眼球亂轉；第二次盯著牆上的十字架或定點看。", action: "問：哪一次站得比較久？為什麼定睛看一個點比較穩？", tip: "跑這場生命的馬拉松，重點在於『仰望耶穌』。" },
+                p2: { title: "長跑者的汗水", time: "10 min", desc: "敘述保羅說他『跑盡了當跑的路』。有時會腳酸、會想放棄。", action: "全家在原地跑步 1 分鐘，氣喘吁吁時大聲說：『耶穌給我力量！』", dialogue: "「這週有什麼功課或事情讓你覺得很累想放棄？我們一起仰望耶穌。」" },
+                p3: { title: "終點線衝刺", time: "15 min", desc: "在客廳拉一根紅線當終點。寫下這週要堅持的目標（如每天讀一章聖經）。", action: "每完成一天就往前走一步，最後衝過終點線領小獎勵。", tip: "建立小進步的獎勵機制，幫助孩子養成屬靈習慣。" },
+                p4: { title: "按腳祝福禮", time: "5 min", desc: "父母幫孩子捏捏腿。辛苦了！", dialogue: "「主耶穌，請給這雙小腳力量。當他跑累的時候，求祢背著他走。讓我們全家一起跑到終點。」", tip: "全家手牽手高舉喊：『得勝！』結束。" }
+            },
+            {
+                id: 20, title: "溫暖的手套", theme: "接待與愛心", scripture: "希伯來書 13:2", color: "bg-pink-700",
+                p1: { title: "隱形客人的派對", time: "5 min", desc: "在餐桌多擺一副碗筷。這副碗筷是給『耶穌』或『需要的人』。", action: "討論：如果耶穌真的坐在那裡，我們會怎麼跟祂聊天？", tip: "操練隨時歡迎主的靈住在我們家。" },
+                p2: { title: "亞伯拉罕接待天使", time: "10 min", desc: "敘述亞伯拉罕在橡樹下熱情接待陌生人，沒想到原來是天使。", action: "演戲：一人扮演疲累的客人，其他人負責遞水、拿拖鞋、說溫暖的話。", dialogue: "「我們家能怎麼讓來訪的人，心裡變得很溫暖？」" },
+                p3: { title: "家庭溫馨地圖", time: "15 min", desc: "準備一個盒子裝小卡片或糖果。這週有客人來（甚至外送員），由孩子負責送上一張祝福卡。", action: "練習說：『辛苦了，上帝愛你。』", tip: "訓練孩子的社交勇氣與慷慨胸襟。" },
+                p4: { title: "摸門框祝福禱告", time: "5 min", desc: "全家走到大門口，手摸著門框。", dialogue: "「主耶穌，願踏進這扇門的人都看見祢的平安，踏出這扇門的人都帶走祢的喜樂。」", tip: "在門口貼一個小標誌：『歡迎耶穌與我的朋友。』" }
+            },
+            {
+                id: 21, title: "聖靈果子品嚐會", theme: "品格成長", scripture: "加拉太書 5:22-23", color: "bg-green-800",
+                p1: { title: "酸甜苦辣果", time: "5 min", desc: "準備酸的（檸檬）、甜的（蘋果）、苦的（苦瓜）。讓孩子品嚐。", action: "問：你希望你表現出來的行為，讓別人口感如何？是想吐掉，還是覺得很甜？", tip: "行為就是生命的果子。" },
+                p2: { title: "九味神聖果實", time: "10 min", desc: "介紹九種果子：仁愛、喜樂、和平、忍耐...。敘述：這些是聖靈在我們心裡種下的種子長成的。", action: "父母分享孩子身上已有的果子（如：我看見[名字]身上有仁愛的果子）。", dialogue: "「這週你最想長出哪一種果子？（如：我想長出忍耐，不對妹妹發脾氣。）」" },
+                p3: { title: "果實收集卡", time: "15 min", desc: "畫出九種不同的水果圖。每當孩子表現出該品項，就讓他收集該貼紙。", action: "收集滿三種，全家吃一次真正的水果大餐慶祝。", tip: "正面強化比負面指責更能讓孩子長出品格。" },
+                p4: { title: "灌溉祝福祈禱", time: "5 min", desc: "手在孩子頭上做下雨灌溉狀。", dialogue: "「聖靈請降下恩雨，澆灌[名字]心裡的果園，讓他在這週結出滿滿的喜樂果。阿們。」", tip: "互相餵一顆最甜的葡萄作為結束。" }
+            },
+            {
+                id: 22, title: "全副軍裝小精兵", theme: "屬靈爭戰", scripture: "以弗所書 6:11-17", color: "bg-slate-700",
+                p1: { title: "誘惑棉花糖", time: "5 min", desc: "放一顆棉花糖在孩子面前。如果能忍耐5分鐘不吃，可以得兩顆。", action: "討論：剛才心裡有沒有一個聲音說『快吃掉它』？這就是誘惑。", tip: "屬靈爭戰往往是在我們的意念裡開始的。" },
+                p2: { title: "穿戴無敵軍裝", time: "10 min", desc: "邊唸經文邊做動作：戴上救恩盔（摸頭）、穿上公義護心鏡（摸胸）、束上真理帶（插腰）。", action: "最後大喊：『拿著信心的盾牌！』阻擋所有壞念頭。", dialogue: "「哪個壞念頭最常攻擊你？（如：我不夠好、我很生氣）。你要用哪件軍裝擋？」" },
+                p3: { title: "軍裝操練操", time: "15 min", desc: "每天早上起床，父母帶孩子做一遍這套動作，建立心理防禦。", action: "錄製一個 30 秒的影片作為這週的挑戰。", tip: "動作要帥氣有力量，讓孩子覺得身為精兵很酷。" },
+                p4: { title: "蓋章授職儀式", time: "5 min", desc: "在孩子手背蓋一個『精兵印章』。", dialogue: "「主耶穌，保護[名字]今天的心和靈。不讓壞脾氣和謊言進來，讓他活出勇敢的生命。」", tip: "全家一起踏步三下：『一、二、三，出發！』" }
+            },
+            {
+                id: 23, title: "把房子蓋在磐石上 (複習與深化)", theme: "真理應用", scripture: "路加福音 6:47-48", color: "bg-blue-900",
+                p1: { title: "回憶藏寶箱", time: "5 min", desc: "回顧過去 22 週印象最深的一個活動。大家分享。", action: "問：哪一個活動讓你學到最多？", tip: "回顧是深化的關鍵。" },
+                p2: { title: "深挖地基的故事", time: "10 min", desc: "敘述那聰明人『深深地挖地』。挖地很辛苦，要流汗。", action: "全家一起做挖地的動作。討論：順服主的話有時候很累，但地基會很穩。", dialogue: "「最近有什麼神的話，雖然很難做到，但你願意去試試看？」" },
+                p3: { title: "家庭聖約書", time: "15 min", desc: "在一張漂亮的紙上寫下：『我們家決定聽主的話去行。』", action: "全家簽名蓋手印。這就是我們家的磐石宣言。", tip: "讓孩子感覺到全家共同遵守一個神聖的約定。" },
+                p4: { title: "根基穩固祈禱", time: "5 min", desc: "全家手牽手，圍繞著磐石宣言。", dialogue: "「主耶穌，願我們不只聽道，更是行道的人。求祢給我們力量，把房子蓋得深、蓋得穩。」", tip: "一起唱一首關於磐石的詩歌，結束聚會。" }
+            },
+            {
+                id: 24, title: "終點後的慶典 (天家慶演)", theme: "永恆盼望", scripture: "啟示錄 21:3-4", color: "bg-black",
+                p1: { title: "時空旅行派對", time: "5 min", desc: "想像我們搭時光機，來到了天國。那裡沒有哭泣、沒有病痛。", action: "問：如果你在天國遇到耶穌，你第一句話想跟祂說什麼？", tip: "給孩子對未來永恆的積極想像，減少對死亡或未來的恐懼。" },
+                p2: { title: "黃金街碧玉城", time: "10 min", desc: "敘述耶穌已經在那裡為我們蓋好了最美的房間。", action: "大家閉上眼，描述你心目中天國的樣子（有無數的冰淇淋？還是會飛的小羊？）。", dialogue: "「在天國裡，我們永遠不分開，這讓你覺得開心嗎？」" },
+                p3: { title: "24週大結業頒獎", time: "15 min", desc: "父母頒發一張精心製作的『家庭祭壇勇士獎狀』給每個孩子。", action: "全家分吃一個慶祝蛋糕，分享這半年的改變。", tip: "這是一個極大的屬靈里程碑，務必慎重且充滿喜樂。" },
+                p4: { title: "終極祝福與宣誓", time: "5 min", desc: "全家面對面大聲宣告經文：『至於我和我家，我們必定事奉耶和華！』", dialogue: "「主耶穌，這 24 週只是一個開始。求祢繼續住在我們家，直到我們在天家見面的那一天。阿們！」", tip: "吹熄最後一根蠟燭，播放歡樂音樂，舉行客廳派對。" }
+            }
+        ];
+
+        const container = document.getElementById('units-container');
+
+        unitsData.forEach(unit => {
+            const card = document.createElement('div');
+            card.className = 'unit-card bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden transition-all hover:shadow-md';
+            card.innerHTML = `
+                <button class="w-full text-left p-6 flex items-center justify-between focus:outline-none" onclick="toggleUnit(this.parentElement)">
+                    <div class="flex items-center gap-5">
+                        <div class="w-12 h-12 rounded-2xl ${unit.color} text-white flex items-center justify-center font-black text-lg shadow-lg">
+                            ${unit.id}
+                        </div>
+                        <div>
+                            <h3 class="font-black text-xl text-slate-800">${unit.title}</h3>
+                            <p class="text-sm font-bold text-slate-400 uppercase tracking-widest">${unit.theme}</p>
+                        </div>
+                    </div>
+                    <svg class="chevron w-6 h-6 text-slate-300 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="accordion-content px-6">
+                    <div class="mb-8">
+                        <span class="bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full font-bold text-sm border border-indigo-100 italic">
+                            📖 ${unit.scripture}
+                        </span>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-title text-amber-600">
+                            <span class="step-tag bg-phase-1">一、暖身</span> ${unit.p1.title}
+                            <span class="ml-auto text-xs font-normal text-slate-400">⏱️ ${unit.p1.time}</span>
+                        </div>
+                        <p class="text-slate-600 mb-3">${unit.p1.desc}</p>
+                        <p class="action-highlight">✨ 玩法：${unit.p1.action}</p>
+                        ${unit.p1.tip ? `<div class="tip-box">💡 輔導小撇步：${unit.p1.tip}</div>` : ''}
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-title text-sky-600">
+                            <span class="step-tag bg-phase-2">二、話語</span> ${unit.p2.title}
+                            <span class="ml-auto text-xs font-normal text-slate-400">⏱️ ${unit.p2.time}</span>
+                        </div>
+                        <p class="text-slate-600 mb-3">${unit.p2.desc}</p>
+                        <p class="action-highlight">✨ 敘事方式：${unit.p2.action}</p>
+                        <div class="dialogue-text">💬 對話引導：${unit.p2.dialogue}</div>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-title text-emerald-600">
+                            <span class="step-tag bg-phase-3">三、回應</span> ${unit.p3.title}
+                            <span class="ml-auto text-xs font-normal text-slate-400">⏱️ ${unit.p3.time}</span>
+                        </div>
+                        <p class="text-slate-600 mb-3">${unit.p3.desc}</p>
+                        <p class="action-highlight">✨ 操作：${unit.p3.action}</p>
+                        ${unit.p3.tip ? `<div class="tip-box">💡 輔導小撇步：${unit.p3.tip}</div>` : ''}
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-title text-indigo-600">
+                            <span class="step-tag bg-phase-4">四、祈禱</span> ${unit.p4.title}
+                            <span class="ml-auto text-xs font-normal text-slate-400">⏱️ ${unit.p4.time}</span>
+                        </div>
+                        <p class="text-slate-600 mb-3">${unit.p4.desc}</p>
+                        <div class="dialogue-text">💬 格式：${unit.p4.dialogue}</div>
+                        ${unit.p4.tip ? `<div class="tip-box">💡 輔導小撇步：${unit.p4.tip}</div>` : ''}
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        function toggleUnit(el) {
+            const isActive = el.classList.contains('active');
+            if (!isActive) el.classList.add('active');
+            else el.classList.remove('active');
+            
+            if (!isActive) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300);
+            }
+        }
+    </script>
 </body>
 </html>
